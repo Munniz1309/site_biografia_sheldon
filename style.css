@@ -1,0 +1,40 @@
+:root{
+    --cor1:#2e3bb8;
+    --cor2:#192c5f;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #413E34;
+    min-width: 800px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+main{
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 50px;
+    padding-top: 5px;
+    text-align: justify;
+    box-shadow: 2px 2px 0px rgb(34, 33, 33);
+}
+
+main div{
+    text-align: center;
+}
+
+main img{
+    width: 80%;
+}
+
+main h1{
+        padding: 10px;
+        color: whitesmoke;
+        background-image: linear-gradient(to right, var(--cor2), var(--cor1), transparent);
+}
+
+main p{
+    text-indent: 50px;
+}
+
