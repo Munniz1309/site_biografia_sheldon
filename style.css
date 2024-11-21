@@ -1,26 +1,69 @@
-body{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+/* Body styling */
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
     background-color: #413E34;
+    color: #333; /* Contraste para facilitar a leitura */
     min-width: 800px;
     max-width: 1000px;
     margin: auto;
+    padding: 0 15px; /* Adicionado para espaçamento em telas pequenas */
 }
 
-main{
-    background-color: whitesmoke;
-    margin: 10px;
-    padding: 50px;
-    padding-top: 5px;
+/* Main content styling */
+main {
+    background-color: #f5f5f5; /* Tom mais claro para contraste suave */
+    margin: 20px auto; /* Centraliza e adiciona espaçamento ao redor */
+    padding: 40px 30px;
+    border-radius: 10px; /* Bordas arredondadas para suavizar */
     text-align: justify;
-    box-shadow: 2px 2px 0px rgb(34, 33, 33);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Sombras mais suaves */
 }
 
+/* Centering image container */
+main div {
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+}
+
+/* Image styling */
+main img {
+    max-width: 100%; /* Responsivo */
+    height: auto; /* Mantém proporção */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Suave realce */
+}
+
+/* Main heading styling */
+main h1 {
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #413E34;
+    font-size: 2rem; /* Tamanho ajustado */
+    text-align: center;
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1), transparent);
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Sombras leves */
+}
+
+/* Paragraph styling */
+main p {
+    text-indent: 50px;
+    line-height: 1.6; /* Melhora a legibilidade */
+    margin-bottom: 15px;
+}
+
+/* Header styling */
 header {
     background-color: #333;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
+    position: sticky; /* Mantém fixo no topo */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+/* Navigation styling */
 header nav ul {
     list-style: none;
     margin: 0;
@@ -28,20 +71,22 @@ header nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* Adicionado para evitar sobreposição */
 }
 
-header nav ul li {
-    display: inline;
-}
-
+/* Navigation links */
 header nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 10px 15px; /* Mais espaçamento */
+    border: 2px solid transparent; /* Para transição suave */
+    transition: all 0.3s ease;
 }
 
+/* Hover effect on links */
 header nav ul li a:hover {
     background-color: #555;
     border-radius: 5px;
+    border-color: #777; /* Adiciona um contorno sutil */
 }
