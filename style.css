@@ -27,8 +27,8 @@ main div {
 
 /* Image styling */
 main img {
-    max-width: 100%; /* Responsivo */
-    height: auto; /* Mantém proporção */
+    max-width: 400px; /* Responsivo */
+    height: 400px; /* Mantém proporção */
     border-radius: 8px; /* Bordas arredondadas */
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Suave realce */
 }
