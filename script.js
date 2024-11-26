@@ -1,14 +1,11 @@
 // Seleciona todas as imagens com o atributo "data-description"
-const images = document.querySelectorAll("img[data-description]");
+document.querySelectorAll("img[data-description]").forEach(image => {
+    let tooltip;
 
-// Adiciona os eventos de mouseover e mouseout
-images.forEach(image => {
+    // Adiciona os eventos de mouseover e mouseout
     image.addEventListener("mouseover", (event) => {
-        const description = image.getAttribute("data-description");
-
-        // Cria o elemento tooltip
-        const tooltip = document.createElement("div");
-        tooltip.textContent = description;
+        tooltip = document.createElement("div");
+        tooltip.textContent = image.dataset.description;
         tooltip.style.cssText = `
             position: absolute;
             background-color: rgba(0, 0, 0, 0.8);
@@ -16,27 +13,21 @@ images.forEach(image => {
             padding: 5px 10px;
             border-radius: 5px;
             font-size: 0.9rem;
-            top: ${event.pageY + 10}px;
-            left: ${event.pageX + 10}px;
             pointer-events: none;
             z-index: 1000;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         `;
-        tooltip.classList.add("tooltip");
         document.body.appendChild(tooltip);
-
-        // Atualiza a posição do tooltip com o movimento do mouse
-        image.addEventListener("mousemove", (event) => {
-            tooltip.style.top = `${event.pageY + 10}px`;
-            tooltip.style.left = `${event.pageX + 10}px`;
-        });
     });
 
-    // Remove o tooltip ao sair do elemento
-    image.addEventListener("mouseout", () => {
-        const tooltip = document.querySelector(".tooltip");
+    image.addEventListener("mousemove", (event) => {
         if (tooltip) {
-            tooltip.remove();
+            tooltip.style.top = `${event.pageY + 10}px`;
+            tooltip.style.left = `${event.pageX + 10}px`;
         }
+    });
+
+    image.addEventListener("mouseout", () => {
+        tooltip?.remove();
     });
 });
