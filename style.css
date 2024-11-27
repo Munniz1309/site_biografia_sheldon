@@ -90,3 +90,84 @@ header nav ul li a:hover {
     border-radius: 5px;
     border-color: #777; /* Adiciona um contorno sutil */
 }
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajustes para o body */
+    body {
+        min-width: 100%; /* A largura mínima será 100% */
+        max-width: 100%; /* A largura máxima será 100% */
+        padding: 0 10px; /* Reduz o padding para mais espaço */
+        overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+    }
+
+    /* Ajustes no conteúdo principal */
+    main {
+        padding: 20px; /* Reduz o padding para adaptar a tela menor */
+        margin: 10px auto; /* Ajuste de margem */
+        box-shadow: none; /* Remove a sombra para uma aparência mais leve */
+    }
+
+    /* Ajustes nas imagens */
+    main img {
+        max-width: 50%; /* A imagem vai ocupar até 50% da largura da tela */
+        height: auto; /* Mantém a proporção da imagem */
+        border-radius: 8px; /* Mantém o arredondamento */
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Mantém a sombra suave */
+    }
+
+    /* Ajuste no cabeçalho */
+    header {
+        padding: 10px 0; /* Reduz o padding */
+        position: relative; /* Garante que o cabeçalho não sobreponha outros elementos */
+    }
+
+    /* Ajuste na navegação */
+    header nav ul {
+        flex-direction: column; /* Organiza os itens em coluna */
+        gap: 15px; /* Espaçamento entre os itens de navegação */
+        padding: 0;
+        justify-content: center; /* Alinha os itens ao centro */
+    }
+
+    /* Ajuste nos links de navegação */
+    header nav ul li a {
+        padding: 12px 18px; /* Aumenta o padding para facilitar o toque */
+        font-size: 1.2rem; /* Aumenta o tamanho da fonte para leitura confortável */
+    }
+
+    /* Hover nos links de navegação */
+    header nav ul li a:hover {
+        background-color: #555; /* Cor de fundo para hover */
+        border-radius: 5px;
+        color: #fff; /* Garantir contraste no hover */
+    }
+
+    /* Ajuste no título principal */
+    main h1 {
+        font-size: 1.75rem; /* Tamanho ajustado para telas pequenas */
+        padding: 10px;
+        margin-bottom: 15px;
+        color: #413E34;
+        text-align: center;
+        background-image: linear-gradient(to right, var(--cor2), var(--cor1), transparent); /* Mantém o gradiente */
+        border-radius: 8px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+
+    /* Ajuste nos parágrafos */
+    main p {
+        font-size: 1rem; /* Tamanho da fonte maior para facilitar a leitura */
+        line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+        text-align: justify; /* Melhor legibilidade */
+        margin-bottom: 20px;
+        padding: 0 5px; /* Ajusta o padding lateral */
+        text-indent: 50px; /* Espaço inicial no parágrafo */
+    }
+
+    /* Ajustes adicionais no layout */
+    main div {
+        margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+        padding: 0 5px; /* Ajusta o padding para evitar o excesso de espaço */
+    }
+}
