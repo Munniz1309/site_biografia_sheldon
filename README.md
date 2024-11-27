@@ -1,7 +1,6 @@
 # Biografias dos Personagens de The Big Bang Theory
 
-Este projeto é um site estático que apresenta biografias dos personagens principais da série **The Big Bang Theory**. Cada personagem tem uma página dedicada com uma breve descrição, além de navegação entre as páginas.
-
+Este projeto é um site estático que apresenta as biografias dos personagens principais da série The Big Bang Theory. Sheldon, Leonard, Penny, Howard e Rajesh possuem uma página exclusiva com uma breve descrição sobre sua trajetória e personalidade, com uma navegação prática que permite alternar facilmente entre as páginas, tornando a experiência do usuário fluida.
 
 ## Tecnologias Utilizadas
 
