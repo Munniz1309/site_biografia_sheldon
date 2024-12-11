@@ -27,5 +27,7 @@ Este projeto é um site estático que apresenta as biografias dos personagens pr
 ├── style.css        # Arquivo de estilos
 └── script.js        # Script para funcionalidades interativas
 ```
+
 ## Contato
-Se você tiver dúvidas ou sugestões, envie um e-mail para vitor13muniz09@gmail.com.
+Se você tiver dúvidas ou sugestões, entre em contato por [vitttormuniz@gmail.com](mailto:vitttormuniz@gmail.com).
+
